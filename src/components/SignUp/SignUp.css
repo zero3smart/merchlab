@@ -1,0 +1,150 @@
+.register {
+  height: 100%;
+  background-color: #1db79d;
+}
+
+.register__container {
+  max-width: 1280px;
+  margin: auto;
+  min-height: 100%;
+  background-color: #1db79d;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.register__content {
+  position: relative;
+  height: 100% !important;
+  min-width: 640px;
+  margin: 0 auto;
+  font-family: San Francisco Regular;
+  z-index: 100;
+}
+
+.register__form-header {
+  margin-bottom: 48px;
+  text-align: center;
+  font-size: 42px;
+  /*color: rgba(255, 255, 255, 0.5);*/
+  color: #fff;
+  font-family: San Francisco Thin;
+}
+
+.register__form {
+
+}
+
+.register__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.register__row input {
+  color: #fff !important;
+}
+
+.register__input_300 {
+  width: 300px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.register__input_420 {
+  width: 420px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.register__input_180 {
+  width: 180px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.register__input_140 {
+  width: 140px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.register__input_240 {
+  width: 240px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.register__input_640 {
+  width: 640px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.register__input_180 select {
+  width: 100%;
+  height: 100%;
+  background-color: #1db79d;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.register__input_180 select:active,
+.register__input_180 select:focus {
+  outline: none;
+}
+
+.register__input_180 select option,
+.register__input_180 select option:active,
+.register__input_180 select option:focus {
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+  outline: none;
+}
+
+.register__contact-info {
+  font-size: 11px;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+
+.register-form__submit {
+  /*text-align: center;*/
+}
+
+.register-form__terms {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.7);
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 12px;
+  letter-spacing: 0.7px;
+}
+
+.register-form__terms span {
+  color: #fff;
+}
+
+.register-form__submit_button {
+  margin: auto;
+  margin-top: 28px;  
+  width: 120px;
+  height: 40px;
+}
+
+.register-form__submit_button button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #1db79d;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: San Francisco Medium;
+}

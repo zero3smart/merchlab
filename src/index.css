@@ -1,0 +1,429 @@
+html {
+  height: 100%;
+  width: 100%;
+  /*background-color: #1db79d !important;*/
+  /*font-family: San Francisco Regular !important;*/
+  /*font-family: sans-serif;*/
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p, ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-user-select: none;
+}
+
+#root {
+  min-height: 100%;
+  height: 100%;
+  /*overflow: hidden;*/
+}
+
+[data-reactroot] {
+  height: 100% !important;
+  /*position: relative;
+  overflow: hidden;*/
+}
+
+.g-clearfix:before, .g-clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.g-inputfield {
+  position: relative;
+  height: 100%;
+}
+
+.g-inputfield > input {
+  padding: 14px 0 6px 2px;
+  font-size: 16px;
+  height: 100%;
+  color: #fff;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.g-inputfield > input:focus {
+  border: none;
+  outline: none;
+  outline-offset: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.password-input-style {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.capitalized {
+  text-transform: capitalize;
+}
+
+.g-inputfield_error {
+  position: absolute;
+  top: 35%;
+  right: 5px;
+}
+
+.g-inputfield_ok {
+  position: absolute;
+  top: 35%;
+  right: 5px;
+}
+
+.g-inputfield__error-message {
+  background-color: #fff;
+  padding: 20px;
+  font-size: 10px;
+  color: #d2644f;
+  position: absolute;
+  right: 0;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  z-index: 100;
+}
+
+.g-inputfield__error-message_red {
+  background-color: #ecf1f7;
+  padding: 20px;
+  font-size: 10px;
+  font-family: SF UI Text Regular;
+  /*color: #d2644f;*/
+  color: #7e8796;
+  position: absolute;
+  right: 0;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  z-index: 100;
+}
+
+.g-placeholder_default {
+  font-size: 16px;
+  position: absolute;
+  top: 14px;
+  left: 2px;
+  color: rgba(255, 255, 255, 0.6) !important;
+  transition: all 200ms ease;
+}
+
+.g-placeholder_active {
+  /*top: 0px;*/
+  transform: translateY(-10px);
+  /*font-size: 0.7em;*/
+  font-size: 8px;
+  text-transform: uppercase;
+  font-family: San Francisco Bold;
+  letter-spacing: 0.5px;
+}
+
+.g-dropdown {
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+}
+
+.g-dropdown__input {
+  padding: 14px 0 6px 2px;
+  font-size: 16px;
+  height: 100%;
+
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.g-dropdown > input:focus {
+  outline: none;
+  color: transparent !important;
+}
+
+.g-dropdown__list {
+  position: absolute;
+  z-index: 100;
+  top: 18px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.g-dropdown__list ul, .g-dropdown__list li {
+  z-index: 120;
+}
+
+.register__row .g-dropdown__triangle {
+  border-top: 5px solid #fff;
+}
+
+.settings__row .g-dropdown__triangle {
+  border-top: 5px solid #7e8796;
+}
+
+.g-dropdown__triangle {
+  top: 22px;
+  right: 10px;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  /*border-top: 5px solid #7e8796;*/
+}
+
+.g-dropdown__input ul {
+  width: 100%;
+  height: 100%;
+}
+
+.g-dropdown__list li {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.g-dropdown__list li:hover {
+  background-color: #edf1f8;
+}
+
+/*.g-dropdown option:focus {
+  color: red;
+}*/
+
+.g-login__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.g-login__header > .g-login__logo,
+.g-login__header > .login-title {
+  display: inline-block;
+}
+
+.login-title {
+  color: white;
+  font-family: San Francisco Thin;
+  position: relative;
+  left: 50px;
+  bottom: 14px;
+  font-size: 20px;
+}
+
+.g-login__logo {
+  position: relative;
+  margin: auto;
+  max-width: 1280px;
+  padding: 103px 0 0 30px;
+}
+
+.g-login__logo > img {
+  width: 100px;
+}
+
+.g-login__error {
+  z-index: 120;
+  position: absolute;
+  top: -92px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 260px;
+  height: 62px;
+  background-color: #1aa48d;
+  border-radius: 50px;
+  justify-content: center;
+}
+
+.g-login__error-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.g-login__error-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #fbff86;
+  width: 140px;
+}
+
+.g-arrow-back {
+  position: absolute;
+  top: -1px;
+  left: -73px;
+  z-index: 120;
+}
+
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco Ultra Light";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco Thin";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco Regular";
+  font-weight: 400;
+  src: url("./fonts/sanfrancisco-regular.woff")
+  /*src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");*/
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco Medium";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco Semi Bold";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco Bold";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+/*body {
+  background-color: #1db79d !important;
+  font-family: San Francisco Regular !important;
+  height: 100%;
+}*/
+
+@font-face {
+  font-family: "SF UI Display Regular";
+  src: url('./fonts/SF-UI-Display-Regular.otf');
+}
+
+@font-face {
+  font-family: "SF UI Display Medium";
+  src: url('./fonts/SF-UI-Display-Medium.otf');
+}
+
+@font-face {
+  font-family: "SF UI Display Bold";
+  src: url('./fonts/SF-UI-Display-Bold.otf');
+}
+
+@font-face {
+  font-family: "SF UI Display Semibold";
+  src: url('./fonts/SF-UI-Display-Semibold.otf');
+}
+
+@font-face {
+  font-family: "SF UI Text Regular";
+  src: url('./fonts/SF-UI-Text-Regular.otf');
+}
+
+@font-face {
+  font-family: "SF UI Text Medium";
+  src: url('./fonts/SF-UI-Text-Medium.otf');
+}
+
+@font-face {
+  font-family: "SF UI Text Semibold";
+  src: url('./fonts/SF-UI-Text-Semibold.otf');
+}
+
+@font-face {
+  font-family: "SF UI Text Bold";
+  src: url('./fonts/SF-UI-Text-Bold.otf');
+}
+
+@font-face {
+  font-family: "SF UI Display Light";
+  src: url('./fonts/SF-UI-Display-Light.otf');
+}
+
+button {
+  box-shadow: none;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+.g-alert_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 23px 26px;
+  margin-bottom: 18px;
+}
+
+.g-alert_img_negative {
+  width: 22px;
+  height: 20px;
+  margin-right: 23px;
+}
+
+.g-alert_img_positive {
+  width: 20px;
+  height: 14px;
+  margin-right: 25px;
+}
+
+.g-alert_text {
+  display: inline-block;
+  font-family: "SF UI Text Regular";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}

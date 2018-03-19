@@ -1,0 +1,24 @@
+.rc-calendar-selected-day .rc-calendar-date {
+  background: #50b89b !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.rc-calendar-selected-date .rc-calendar-date {
+  background: #50b89b !important;
+  color: #fff !important;
+}
+
+.rc-calendar-range .rc-calendar-in-range-cell, .rc-calendar-in-range-cell > div, .rc-calendar-selected-day {
+  background: #50b89b !important;
+  color: #fff !important;
+}
+
+.rc-calendar-today .rc-calendar-date {
+    border: none !important;
+}
+
+.rc-calendar {
+  border: none !important;
+  box-shadow: none !important;
+}

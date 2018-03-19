@@ -1,0 +1,20 @@
+set Login as default screen. (component is already set in App.js)
+
+Allow users to be able to signup via Signup link
+
+prevent users from seeing the rest of the site until they are verified.
+
+on the Homepage component, users can upload video to the database and have
+    ability to see thumbnails of past videos uploaded. The videos can be loaded
+    with a button, but would love to be able to use drag and drop.
+
+Targeting (or tags) of these videos: Age/State/Gender and ability to delete
+      videos
+
+Make sure React Router 4 is running correctly (believe it already is, may need
+      to add more Routes)
+
+Most of the info for the database is in the other repo ("Backend"), but was
+      initially written in Angular using the create-react-app package. I'm
+      not familiar with Angular, but assume you can dig through and find the
+      stuff you need.
